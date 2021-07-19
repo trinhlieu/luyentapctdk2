@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    ptbac1()
+    function ptbac1() {
+        let a = parseInt(prompt("Nhập vào số a: "))
+        let b = parseInt(prompt("Nhập vào số b: "))
+        if (a === 0 && b === 0) {
+            alert("Phương trình vô số nghiệm")
+        } else if (a === 0 && b !== 0){
+            alert("Phương trình vô nghiệm")
+        } else {
+            alert("Phương trình có 1 nghiệm duy nhất là: " + (-b/a))
+        }
+    }
+    // ptbac1()
+</script>
+</body>
+</html>

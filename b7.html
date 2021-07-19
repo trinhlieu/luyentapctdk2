@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    ptrb2()
+    function ptrb2() {
+        let a = prompt('Nhập giá trị a')
+        let b = prompt('Nhập giá trị b')
+        let c = prompt('Nhập giá trị c')
+        let D = b ** 2 - 4 * a * c
+
+        if (D < 0) {
+            alert('Phương trình vô nghiệm')
+        }
+            else if (D ===0)
+                alert('Phương trình có nghiệm=' + -b/2*a)
+        else
+            alert('Phương trình có 2 nghiệm là'+(-b+Math.sqrt(D))/(2*a) + 'và' + (-b-Math.sqrt(D))/(2*a))
+    }
+</script>
+</body>
+</html>
